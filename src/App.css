@@ -30,6 +30,8 @@ html {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: space-around;
+  justify-content: space-between;
 }
 
 .header {
@@ -53,4 +55,44 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
+}
+
+.footer{
+  background: rgba(255,255,255, 0.4);
+  height: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-input{
+  width: 70vw;
+  font-family: 'Open Sans', sans-serif;
+  border: rgba(255,255,255, 0.4);
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  border-radius: 0.8rem;
+  position: absolute;
+}
+
+.button{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  border: rgba(255,255,255, 0.4);
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  border-radius: 0.7rem;
+  margin-left: 0.4rem;
+  position: absolute;
+  left: 46rem;
+}
+
+.message{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 0.4rem 0.4rem 0.4rem 0.4rem;
+  margin: 20rem 1rem 0 50rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
