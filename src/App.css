@@ -63,26 +63,41 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .text-input{
-  width: 70vw;
+  width: calc(100% - 10rem);
   font-family: 'Open Sans', sans-serif;
   border: rgba(255,255,255, 0.4);
   padding: 0.4rem 0.4rem 0.4rem 0.4rem;
   border-radius: 0.8rem;
-  position: absolute;
 }
 
 .button{
+  position: absolute;
+  right:4.9rem;
+  top:0.88rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   border: rgba(255,255,255, 0.4);
   padding: 0.2rem 0.4rem 0.2rem 0.4rem;
   border-radius: 0.7rem;
   margin-left: 0.4rem;
-  position: absolute;
-  left: 46rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  overflow: auto;
+}
+
+.message-row{
+  width:100%;
 }
 
 .message{
@@ -91,8 +106,9 @@ html {
   color: white;
   background-color: rgba(255,255,255, 0.2);
   padding: 0.4rem 0.4rem 0.4rem 0.4rem;
-  margin: 20rem 1rem 0 50rem;
+  margin: 0.3rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  display: inline-block;
 }

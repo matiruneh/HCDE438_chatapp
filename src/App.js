@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import TextInput from './Textinput.js';
+import Message from './Message'
 
 function App() {
   const [messages, setMessages] = useState([{text:'hello'}])
@@ -9,13 +10,15 @@ function App() {
       <header className="header">
         <div className="logo" />
         MyChat
-      </header>
+      </header>c
         
-      <section className="message">
-        {messages[0].text}
-      </section>
+      <main className="messages">
+      {messages.map((m,i)=> {
+        return <Message key={i} {...m} />
+      })}
+      </main>
 
-      <TextInput send={t=> setMessages([{text:t}])}/>
+      <TextInput send={t=> setMessages([{text:t, date:new Date()}, ...messages])}/>
 
     </div>;
 }
